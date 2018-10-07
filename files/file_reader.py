@@ -1,4 +1,6 @@
-filename = '/home/chuongvo/Code4Fun/python/files/pi_digits.txt'
+import os 
+dir_path = os.path.dirname(os.path.realpath(__file__))
+filename = dir_path + '/pi_digits.txt'
 with open(filename) as file_object:
   contents = file_object.read()
   print(contents)
@@ -15,7 +17,7 @@ for line in lines:
 
 # Million digits
 
-milion_digits_filename = '/home/chuongvo/Code4Fun/python/files/pi_million_digits.txt'
+milion_digits_filename = dir_path + '/pi_million_digits.txt'
 with open(milion_digits_filename) as file_object:
   lines = file_object.readlines()
 pi_string = ''
