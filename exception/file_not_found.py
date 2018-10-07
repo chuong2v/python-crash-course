@@ -6,3 +6,5 @@ except Exception as exp:
   msg = "Sorry, the file " + filename + " does not exist."
   print(msg)
   print(type(exp).__name__)
+else:
+  pass
